@@ -50,3 +50,4 @@ Thumbs.db
 # ignore npm files
 node_modules/
 _site/regandev.code-workspace
+_site/CNAME
