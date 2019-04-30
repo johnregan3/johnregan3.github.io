@@ -1,75 +1,153 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Testing</title>
+    <title>Regan.dev - Testing</title>
     <style>
-      html {
-        box-sizing: border-box;
-        font-size: 8px;
-        font-family: 'Arial', 'Helvetica', sans-serif;
-      }
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+  }
 
-      @media screen and (min-width: 640px) {
-        html {
-          font-size: 10px;
-        }
-      }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-      body, h1, h2, h3, p, ol, ul {
-        margin: 0;
-        padding: 0;
-      }
+  body {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding-bottom: 5rem;
+  }
 
-      body {
-        font-size: 1.8rem;
-        line-height: 1.6em;
-      }
+  h1,
+  h2,
+  h3 {
+    font-family: 'Times', 'Times New Roman', serif;
+  }
 
-      h1, h2, h3 {
-        font-family: 'Times', 'Times New Roman', serif;
-      }
+  .content h1 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    margin-top: 10rem;
+    margin-bottom: 2.6rem;
+  }
 
-      h1 {
-        font-size: 4rem;
-        line-height: 5.2rem;
-        margin-top: 5rem;
-        margin-bottom: 2.6rem;
-      }
+  .content h2 {
+    font-size: 2.7rem;
+    line-height: 3.9rem;
+    margin-top: 6.5rem;
+    margin-bottom: 1.3rem;
+  }
 
-      h2 {
-        font-size: 2.7rem;
-        line-height: 3.9rem;
-        margin-bottom: 1.3rem;
-      }
+  .content h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 5.2rem;
+    margin-bottom: 1.3rem;
+  }
 
-      h3 {
-        font-size: 2.2rem;
-        line-height: 2.6rem;
-        margin-bottom: 1.3rem;
-      }
-      
-      p {
-        margin: 0 0 2.5rem;
-      }
+  @media screen and (min-width: 640px) {
+    .content h1 {
+      margin-top: 12.4rem;
+      margin-bottom: 2.6rem;
+    }
 
-      #wrapper {
-        width: 95%;
-        max-width: 640px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="wrapper">
-      <h1>Testing</h1>
-      <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus pharetra tellus, cursus convallis nunc semper nec. Mauris ligula massa, feugiat ut commodo sed, finibus eget tellus. Integer porta nulla sit amet elit fermentum vestibulum. Suspendisse non massa dapibus dui viverra condimentum quis at risus. Sed fermentum eu magna nec viverra. Mauris sed elit vel lectus ullamcorper vehicula sit amet vitae augue. Ut auctor eu dui at posuere. Integer elementum augue non quam varius varius. Fusce quam diam, hendrerit eu sagittis quis, consectetur nec neque. Pellentesque lacinia aliquam diam, et vulputate nibh maximus nec. Mauris lorem mauris, maximus et eros non, suscipit tristique velit. Proin consequat sodales felis, imperdiet semper metus mattis et. Maecenas gravida lectus ligula, vel accumsan lorem pellentesque tempor.</p>
+    .content h2 {
+
+      margin-top: 7.75rem;
+      margin-bottom: 1.55rem;
+    }
+
+    .content h3 {
+      margin-top: 6.2rem;
+      margin-bottom: 1.55rem;
+    }
+  }
+
+  .content h1+h2 {
+    margin-top: 2.6rem;
+  }
+
+  .content h2+h3 {
+    margin-top: 1.3rem;
+  }
+
+  .content p {
+    margin: 0 0 2.6rem;
+  }
+
+  @media screen and (min-width: 640px) {
+    .content h1+h2 {
+      margin-top: 3.1rem;
+    }
+
+    .content h2+h3 {
+      margin-top: 1.55rem;
+    }
+
+    .content p {
+      margin-bottom: 3.1rem;
+    }
+  }
+
+  .nav {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #wrapper {
+    width: 95%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .site__title {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .site__title a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .site__title a:hover {
+    text-decoration: underline;
+  }
+
+  .archive__list {
+    margin-bottom: 2rem;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <header class="site__title">
+    <a href="/" title="Home">regan.dev</a>
+  </header>
+
+  <section class="content">
+    <h1>Testing</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus pharetra tellus, cursus convallis nunc semper nec. Mauris ligula massa, feugiat ut commodo sed, finibus eget tellus. Integer porta nulla sit amet elit fermentum vestibulum. Suspendisse non massa dapibus dui viverra condimentum quis at risus. Sed fermentum eu magna nec viverra. Mauris sed elit vel lectus ullamcorper vehicula sit amet vitae augue. Ut auctor eu dui at posuere. Integer elementum augue non quam varius varius. Fusce quam diam, hendrerit eu sagittis quis, consectetur nec neque. Pellentesque lacinia aliquam diam, et vulputate nibh maximus nec. Mauris lorem mauris, maximus et eros non, suscipit tristique velit. Proin consequat sodales felis, imperdiet semper metus mattis et. Maecenas gravida lectus ligula, vel accumsan lorem pellentesque tempor.</p>
 
 <h2 id="h2-here">h2 here</h2>
 
@@ -83,8 +161,16 @@
 
 <p>Curabitur pulvinar congue odio, non sagittis ante pretium nec. Vivamus quis turpis in enim fermentum sollicitudin. Aliquam sed lacus mi. Vestibulum efficitur odio sodales erat imperdiet fringilla. Quisque venenatis sit amet massa rhoncus mattis. Etiam rutrum in orci sit amet ornare. Curabitur id rhoncus est. Sed sodales, arcu vitae tempor tincidunt, orci velit facilisis massa, eu ultricies dolor lorem et risus. Sed efficitur enim cursus eleifend ultrices. Phasellus at enim in metus varius laoreet.</p>
 
-      </section>
-      <a href="/">Home</a>
-    </div>
-  </body>
-</html>
+  </section>
+
+  <a href="/" title="regan.dev Home">Home</a>
+
+</div><!-- #wrapper -->
+
+<div style="text-align: center;">
+    <small>&copy; 2019. regan.dev</small>
+</div>
+
+</body>
+
+</html

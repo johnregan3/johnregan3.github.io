@@ -1,12 +1,28 @@
 ---
-layout: default
-title: Regan.Dev
+layout: home
+title: regan.dev
+url: https://regan.dev
 ---
+
+<nav class="nav">
+  <a href="/about.html">About/FAQ</a>
+</nav>
+
+<p>
+  <img src="/assets/img/profile.jpg" style="width: 200px;" />
+  <br />
+  John Regan<br />
+  Kansas City, MO, USA<br />
+  Frontend, PHP, WordPress, etc<br />
+</p>
+
 <section class="archive-post-list">
 
-  <ul>
+  <h3>Recent Thoughts</h3>
+
+  <ul class="archive__list">
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
