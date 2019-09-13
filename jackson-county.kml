@@ -5,10 +5,13 @@
     <description>Jackson County Missouri</description>
     <Style id="transBluePoly">
       <LineStyle>
+      <color>FF2fb77e</color>
         <width>2</width>
       </LineStyle>
       <PolyStyle>
-        <color>2FB77EFF</color>
+        <color>FF2fb77e</color>
+        <fill>0</fill>
+        <outline>1</outline>
       </PolyStyle>
     </Style>
     <Placemark>
