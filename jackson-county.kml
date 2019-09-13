@@ -5,7 +5,7 @@
     <description>Chicago Transit Authority train lines</description>
     <Placemark>
         <name>Jackson</name>
-        <Style><LineStyle><color>ff0000ff</color></LineStyle>  <PolyStyle><fill>1</fill></PolyStyle></Style>
+        <Style><LineStyle><color>2fb77eff</color></LineStyle>  <PolyStyle><fill>1</fill></PolyStyle></Style>
         <Polygon>
         <outerBoundaryIs>
         <LinearRing><coordinates>
