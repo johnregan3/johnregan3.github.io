@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1">
   <Document>
-    <name>Jackson County</name>
-    <description>Jackson County Missouri border</description>
+<name>Jackson County</name>
+    <description>Jackson County Missouri</description>
+    <Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>2FB77E00</color>
+      </PolyStyle>
+    </Style>
     <Placemark>
         <name>Jackson</name>
-        <Style><LineStyle><color>2fb77eff</color></LineStyle>  <PolyStyle><fill>0</fill></PolyStyle></Style>
+        <styleUrl>#transBluePoly</styleUrl>
         <Polygon>
         <outerBoundaryIs>
         <LinearRing><coordinates>
