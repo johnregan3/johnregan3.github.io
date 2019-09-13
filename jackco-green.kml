@@ -3,20 +3,20 @@
   <Document>
 <name>Jackson County</name>
     <description>Jackson County Missouri</description>
-    <Style id="transBluePoly">
-     <LineStyle>
-         <color>ea6225FF</color>
-        <width>3.5</width>
+    <Style id="transGreenPoly">
+      <LineStyle>
+         <color>FF2fb77e</color>
+        <width>2</width>
       </LineStyle>
       <PolyStyle>
         <fill>1</fill>
-        <color>503CC6EF</color>
+        <color>502fb77e</color>
         <outline>1</outline>
       </PolyStyle>
     </Style>
     <Placemark>
         <name>Jackson</name>
-        <styleUrl>#transBluePoly</styleUrl>
+        <styleUrl>#transGreenPoly</styleUrl>
         <Polygon>
         <outerBoundaryIs>
         <LinearRing><coordinates>
